@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nubank/areaAcoes.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -16,20 +17,31 @@ class _HomeState extends State<Home> {
         Container(
           color: const Color(0xFF820AD1),
           padding: const EdgeInsets.all(20),
-          child: const Column(
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CircleAvatar(
-                    backgroundColor: Color(0xff9B3BDA),
-                    child: Icon(
-                      Icons.person,
+                  // CircleAvatar(
+                  //   backgroundColor: Color(0xff9B3BDA),
+                  //   child: Icon(
+                  //     Icons.person,
+                  //     color: Color(0xffF5F5F5),
+                  //   ),
+                  // ),
+                  IconButton(
+                    icon: const Icon(
+                      Icons.account_circle,
                       color: Color(0xffF5F5F5),
-                    ),
+                      ),
+                    iconSize: 30.0,
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/profile');
+                    },
+                    tooltip: 'Ir para perfil',
                   ),
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Icon(
@@ -54,8 +66,8 @@ class _HomeState extends State<Home> {
                   ),
                 ],
               ),
-              SizedBox(height: 20),
-              Text(
+              const SizedBox(height: 20),
+              const Text(
                 "Olá, Danilo",
                 style: TextStyle(
                     color: Color(0xffF5F5F5),
@@ -93,64 +105,10 @@ class _HomeState extends State<Home> {
                     fontSize: 20,
                     fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 20,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundColor: Color(0xffF0F1F5),
-                        child: Icon(
-                          Icons.pix,
-                          color: Colors.black,
-                        ),
-                      ),
-                      Text("Pix")
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundColor: Color(0xffF0F1F5),
-                        child: Icon(
-                          Icons.payment,
-                          color: Colors.black,
-                        ),
-                      ),
-                      Text("Pagar")
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundColor: Color(0xffF0F1F5),
-                        child: Icon(
-                          Icons.money,
-                          color: Colors.black,
-                        ),
-                      ),
-                      Text("Transferir")
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundColor: Color(0xffF0F1F5),
-                        child: Icon(
-                          Icons.money,
-                          color: Colors.black,
-                        ),
-                      ),
-                      Text("Depositar")
-                    ],
-                  ),
-                ],
-              )
+              SizedBox(
+                height: 20,
+              ),
+              AreaAcoes(),
             ],
           ),
         )

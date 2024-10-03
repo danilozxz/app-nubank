@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nubank/home.dart';
+import 'package:nubank/profile.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -32,9 +33,13 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: "Home",
-      home: Home(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const Home(),
+        '/profile': (context) => const Profile()
+      },
     );
   }
 }
