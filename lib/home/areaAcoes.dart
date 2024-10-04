@@ -11,14 +11,14 @@ class _AreaAcoesState extends State<AreaAcoes> {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Column(children: [
           Container(
             decoration: const BoxDecoration(
                 color: Color(0xffF0F1F5), shape: BoxShape.circle),
             child: IconButton(
-              padding: const EdgeInsets.all(24),
+              padding: const EdgeInsets.all(20),
               onPressed: () {},
               icon: const Icon(Icons.pix),
             ),
@@ -33,7 +33,7 @@ class _AreaAcoesState extends State<AreaAcoes> {
             decoration: const BoxDecoration(
                 color: Color(0xffF0F1F5), shape: BoxShape.circle),
             child: IconButton(
-              padding: const EdgeInsets.all(24),
+              padding: const EdgeInsets.all(20),
               onPressed: () {},
               icon: const Icon(Icons.money),
             ),
@@ -48,7 +48,7 @@ class _AreaAcoesState extends State<AreaAcoes> {
             decoration: const BoxDecoration(
                 color: Color(0xffF0F1F5), shape: BoxShape.circle),
             child: IconButton(
-              padding: const EdgeInsets.all(24),
+              padding: const EdgeInsets.all(20),
               onPressed: () {},
               icon: const Icon(Icons.qr_code),
             ),
@@ -63,7 +63,7 @@ class _AreaAcoesState extends State<AreaAcoes> {
             decoration: const BoxDecoration(
                 color: Color(0xffF0F1F5), shape: BoxShape.circle),
             child: IconButton(
-              padding: const EdgeInsets.all(24),
+              padding: const EdgeInsets.all(20),
               onPressed: () {},
               icon: const Icon(Icons.attach_money),
             ),

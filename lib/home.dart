@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nubank/home/areaAcoes.dart';
+import 'package:nubank/home/cartaoDeCredito.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -44,59 +45,72 @@ class _HomeState extends State<Home> {
               )),
         ],
       ),
-      body: ListView(
-        padding: const EdgeInsets.all(20),
-        children: const [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                "Conta",
+      body: Container(
+        margin: const EdgeInsets.all(16),
+        child: ListView(
+          children: const [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Conta",
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold),
+                ),
+                Icon(Icons.arrow_forward_ios),
+              ],
+            ),
+            SizedBox(height: 10),
+            Text("R\$1295,00",
                 style: TextStyle(
                     color: Colors.black,
                     fontSize: 20,
-                    fontWeight: FontWeight.bold),
-              ),
-              Icon(Icons.arrow_right),
-            ],
-          ),
-          Text("R\$0,15",
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold)),
-          SizedBox(
-            height: 20,
-          ),
-          AreaAcoes(),
-          SizedBox(height: 20),
-          Card(
-            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-            color: Color(0xffF0F1F5),
-            child: ListTile(
-              leading: Icon(Icons.credit_card),
-              title: Text('Meus cartões'),
+                    fontWeight: FontWeight.bold)),
+            SizedBox(
+              height: 30,
             ),
-          ),
-          Card(
-            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-            color: Color(0xffF0F1F5),
-            child: Column(
-              
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                
-                Text(
+            AreaAcoes(),
+            SizedBox(height: 30),
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              color: Color(0xffF0F1F5),
+              child: ListTile(
+                leading: Icon(Icons.credit_card),
+                title: Text('Meus cartões'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              color: Color(0xffF0F1F5),
+              child: ListTile(
+                title: Text(
                   'Guarde seu dinheiro em caixinhas',
                   style: TextStyle(
                       color: Color(0xFF820AD1), fontWeight: FontWeight.bold),
                 ),
-                Text('Acessando a área de planejamento', style: TextStyle(
-                      color: Color(0xff747885))),
-              ],
+                subtitle: Text(
+                  "Acessando a área de planejamento",
+                  style: TextStyle(
+                    color: Color(0xff747885),
+                  ),
+                ),
+              ),
             ),
-          ),
-        ],
+            SizedBox(
+              height: 20,
+            ),
+            Divider(
+              color: Color.fromARGB(255, 195, 195, 195),
+              thickness: 1,
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            CartaoDeCredito()
+          ],
+        ),
       ),
     );
   }
