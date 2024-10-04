@@ -125,6 +125,18 @@ class _HomeState extends State<Home> {
             ),
 
             Emprestimo(),
+
+             SizedBox(
+              height: 30,
+            ),
+            Divider(
+
+              color: Color.fromARGB(255, 202, 202, 202),
+              thickness: 1,
+            ),
+            SizedBox(
+              height: 30,
+            ),
           ],
         ),
       ),
