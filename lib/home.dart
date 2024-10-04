@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nubank/home/areaAcoes.dart';
 import 'package:nubank/home/cartaoDeCredito.dart';
+import 'package:nubank/home/emprestimo.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -99,16 +100,31 @@ class _HomeState extends State<Home> {
               ),
             ),
             SizedBox(
-              height: 20,
+              height: 30,
             ),
             Divider(
-              color: Color.fromARGB(255, 195, 195, 195),
+
+              color: Color.fromARGB(255, 202, 202, 202),
               thickness: 1,
             ),
             SizedBox(
-              height: 20,
+              height: 30,
             ),
-            CartaoDeCredito()
+            CartaoDeCredito(),
+
+            SizedBox(
+              height: 30,
+            ),
+            Divider(
+
+              color: Color.fromARGB(255, 202, 202, 202),
+              thickness: 1,
+            ),
+            SizedBox(
+              height: 30,
+            ),
+
+            Emprestimo(),
           ],
         ),
       ),
