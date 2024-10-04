@@ -73,7 +73,7 @@ class _CartaoDeCreditoState extends State<CartaoDeCredito> {
         ),
         Row(
           children: [
-            TextButton(
+            ElevatedButton(
               onPressed: () {},
               style: TextButton.styleFrom(
                 backgroundColor: const Color(0xFF820AD1),
