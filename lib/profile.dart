@@ -5,6 +5,8 @@ class Profile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double appBarHeight = MediaQuery.sizeOf(context).height * 0.2;
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 181, 181, 181),
@@ -19,9 +21,9 @@ class Profile extends StatelessWidget {
           IconButton(onPressed: () {}, icon: const Icon(Icons.abc))
         ],
         bottom:
-            const PreferredSize(
-              preferredSize: Size.fromHeight(150), //Colocar para ocupar 20% da tela
-              child: Card(
+            PreferredSize(
+              preferredSize: Size.fromHeight(appBarHeight),
+              child: const Card(
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                 color: Colors.amber,
                 child: ListTile(
