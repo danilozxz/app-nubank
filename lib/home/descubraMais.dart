@@ -1,3 +1,7 @@
+/*
+  Essa é a última seção (Descubra mais), onde tem um card com imagem, informações sobre seguro de vida e um botão para conhecer 
+*/
+
 import 'package:flutter/material.dart';
 
 class DescubraMais extends StatelessWidget {

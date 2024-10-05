@@ -1,3 +1,7 @@
+/*
+  Essa é a seção onde ficam os itens: PIX, Pagamentos, QRCode e Transferir
+*/
+
 import 'package:flutter/material.dart';
 
 class AreaAcoes extends StatefulWidget {

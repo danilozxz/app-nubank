@@ -1,3 +1,7 @@
+/*
+  Essa é a seção principal onde parte do layout foi estruturado aqui e classes de seções foram importadas
+*/
+
 import 'package:flutter/material.dart';
 import 'package:nubank/home/areaAcoes.dart';
 import 'package:nubank/home/cartaoDeCredito.dart';

@@ -1,3 +1,7 @@
+/*
+  Essa é a seção onde fica a fatura com os seguintes itens: Informação sobre o fechamento da fatura, valor da fatura, vencimento e botão para pagar
+*/
+
 import 'package:flutter/material.dart';
 
 class CartaoDeCredito extends StatefulWidget {
