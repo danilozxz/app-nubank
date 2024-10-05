@@ -18,14 +18,14 @@ class _AreaAcoesState extends State<AreaAcoes> {
             decoration: const BoxDecoration(
                 color: Color(0xffF0F1F5), shape: BoxShape.circle),
             child: IconButton(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(16),
               onPressed: () {},
               icon: const Icon(Icons.pix),
             ),
           ),
           const Text(
             "Pix",
-            
+            style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ]),
         Column(children: [
@@ -33,14 +33,14 @@ class _AreaAcoesState extends State<AreaAcoes> {
             decoration: const BoxDecoration(
                 color: Color(0xffF0F1F5), shape: BoxShape.circle),
             child: IconButton(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(16),
               onPressed: () {},
               icon: const Icon(Icons.money),
             ),
           ),
           const Text(
             "Pagamentos",
-            
+            style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ]),
         Column(children: [
@@ -48,14 +48,14 @@ class _AreaAcoesState extends State<AreaAcoes> {
             decoration: const BoxDecoration(
                 color: Color(0xffF0F1F5), shape: BoxShape.circle),
             child: IconButton(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(16),
               onPressed: () {},
               icon: const Icon(Icons.qr_code),
             ),
           ),
           const Text(
             "QR Code",
-            
+            style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ]),
         Column(children: [
@@ -63,14 +63,14 @@ class _AreaAcoesState extends State<AreaAcoes> {
             decoration: const BoxDecoration(
                 color: Color(0xffF0F1F5), shape: BoxShape.circle),
             child: IconButton(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(16),
               onPressed: () {},
               icon: const Icon(Icons.attach_money),
             ),
           ),
           const Text(
             "Transferir",
-            
+            style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ]),
       ],

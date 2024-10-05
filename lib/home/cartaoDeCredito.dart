@@ -19,7 +19,7 @@ class _CartaoDeCreditoState extends State<CartaoDeCredito> {
               "Cartão de crédito",
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 20,
+                fontSize: 24,
               ),
             ),
             Icon(Icons.arrow_forward_ios),
@@ -35,7 +35,7 @@ class _CartaoDeCreditoState extends State<CartaoDeCredito> {
               "Fatura fechada",
               style: TextStyle(
                 color: Color(0xff747885),
-                fontSize: 16,
+                fontSize: 18,
               ),
             ),
           ],
@@ -49,7 +49,7 @@ class _CartaoDeCreditoState extends State<CartaoDeCredito> {
             Text("R\$0,15",
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 20,
+                  fontSize: 24,
                 ))
           ],
         ),
@@ -63,7 +63,7 @@ class _CartaoDeCreditoState extends State<CartaoDeCredito> {
               "Vencimento dia 02",
               style: TextStyle(
                 color: Color(0xff747885),
-                fontSize: 16,
+                fontSize: 18,
               ),
             ),
           ],
@@ -85,7 +85,7 @@ class _CartaoDeCreditoState extends State<CartaoDeCredito> {
               ),
               child: const Text(
                 "Pagar fatura",
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.white, fontSize: 18),
               ),
             ),
           ],

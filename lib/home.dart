@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nubank/home/areaAcoes.dart';
 import 'package:nubank/home/cartaoDeCredito.dart';
+import 'package:nubank/home/descubraMais.dart';
 import 'package:nubank/home/emprestimo.dart';
 
 class Home extends StatefulWidget {
@@ -57,7 +58,7 @@ class _HomeState extends State<Home> {
                   "Conta",
                   style: TextStyle(
                       color: Colors.black,
-                      fontSize: 20,
+                      fontSize: 24,
                       fontWeight: FontWeight.bold),
                 ),
                 Icon(Icons.arrow_forward_ios),
@@ -67,7 +68,7 @@ class _HomeState extends State<Home> {
             Text("R\$1295,00",
                 style: TextStyle(
                     color: Colors.black,
-                    fontSize: 20,
+                    fontSize: 26,
                     fontWeight: FontWeight.bold)),
             SizedBox(
               height: 30,
@@ -79,7 +80,7 @@ class _HomeState extends State<Home> {
               color: Color(0xffF0F1F5),
               child: ListTile(
                 leading: Icon(Icons.credit_card),
-                title: Text('Meus cartões'),
+                title: Text('Meus cartões', style: TextStyle(fontWeight: FontWeight.bold),),
               ),
             ),
             Card(
@@ -137,6 +138,8 @@ class _HomeState extends State<Home> {
             SizedBox(
               height: 30,
             ),
+
+            DescubraMais(),
           ],
         ),
       ),

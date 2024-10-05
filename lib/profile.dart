@@ -9,27 +9,26 @@ class Profile extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 181, 181, 181),
+        backgroundColor: const Color(0xFF820AD1),
         leading: IconButton(
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: const Icon(Icons.close_rounded)),
+            icon: const Icon(Icons.close_rounded), color: Colors.white,),
         actions: [
           IconButton(
-              onPressed: () {}, icon: const Icon(Icons.help_outline_rounded)),
-          IconButton(onPressed: () {}, icon: const Icon(Icons.abc))
+              onPressed: () {}, icon: const Icon(Icons.help_outline_rounded), color: Colors.white,),
         ],
-        bottom:
-            PreferredSize(
-              preferredSize: Size.fromHeight(appBarHeight),
-              child: const Card(
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                color: Colors.amber,
-                child: ListTile(
-                  leading: FlutterLogo(),
-                  title: Text('Nesse pique mermo'),
-                ),
+        bottom: PreferredSize(
+            preferredSize: Size.fromHeight(appBarHeight),
+            child: Card(
+              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              color: Color(0xffF5F5F5),
+              child: ListTile(
+                leading: Image.asset('images/logo.png'),
+                title: const Text('Seu banco preferido', style: TextStyle(fontWeight: FontWeight.bold),),
+                textColor: Color(0xFF820AD1),
+              ),
             )),
       ),
       body: Container(),
