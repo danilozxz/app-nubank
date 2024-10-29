@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:nubank/home.dart';
+import 'package:nubank/conta/conta.dart';
+import 'package:nubank/home/home.dart';
 import 'package:nubank/profile.dart';
-void main() {
+import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
+
+
+Future<void> main() async {
+  const keyApplicationId = 'PBcMNDjmfNsJlLYwlU22PqlBMIWz79jwbNT7ukvm';
+  const keyClientKey = 'UDobuy569Dd4f2YCsnGu4HaUXVwv1mUBRXXOPfUr';
+  const keyParseServeUrl = 'https://parseapi.back4app.com';
+  await Parse().initialize(keyApplicationId, keyParseServeUrl, clientKey: keyClientKey, debug: true);
+
   runApp(const MyApp());
 }
 
@@ -38,7 +47,8 @@ class _MyHomePageState extends State<MyHomePage> {
       initialRoute: '/',
       routes: {
         '/': (context) => const Home(),
-        '/profile': (context) => const Profile()
+        '/profile': (context) => const Profile(),
+        '/conta': (context) => const Conta(),
       },
     );
   }
